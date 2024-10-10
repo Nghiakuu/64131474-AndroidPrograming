@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:background="#3F8CB5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:background="#FF9800"
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SỐ HỌC ĐƠN GIẢN"
+            android:textSize="25sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="A =">
+
+            </TextView>
+            <EditText
+                android:gravity="center"
+                android:id="@+id/edtA"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="B =">
+
+            </TextView>
+            <EditText
+                android:gravity="center"
+                android:id="@+id/edtB"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <Button
+                android:onClick="Xuly_Cong"
+                android:id="@+id/btnAdd"
+                android:layout_margin="5dp"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:text="+">
+            </Button><Button
+            android:onClick="Xuly_Tru"
+            android:id="@+id/btnSub"
+            android:layout_margin="5dp"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="-">
+        </Button><Button
+            android:onClick="Xuly_Nhan"
+            android:id="@+id/btnMul"
+            android:layout_margin="5dp"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="*">
+        </Button><Button
+            android:onClick="Xuly_Chia"
+            android:id="@+id/btnDiv"
+            android:layout_margin="5dp"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="/">
+        </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <TextView
+                android:background="@color/white"
+                android:layout_width="200dp"
+                android:layout_margin="10dp"
+                android:text="KẾT QUẢ"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:layout_height="70dp">
+            </TextView>
+            <TextView
+                android:id="@+id/tvResult"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:layout_height="70dp">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
